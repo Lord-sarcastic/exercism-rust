@@ -11,10 +11,9 @@ pub fn raindrops(n: u32) -> String {
         result.push_str("Plong");
     }
 
-    result
-}
-
-fn main() {
-    let hello = raindrops(3);
-    println!("{}", hello);
+    if result.trim() == "" {
+        n.to_string()
+    } else {
+        result
+    }
 }
